@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title data-en="About Us | Pro Fix Auto Repair & Collision" data-es="Sobre Nosotros | Pro Fix Auto" data-pt="Sobre Nós | Pro Fix Auto">About Us | Pro Fix Auto Repair &amp; Collision</title>
+<meta name="description" content="Learn about Pro Fix Auto Repair & Collision Inc. — Marietta's trusted full-service auto shop serving the community with certified professionals."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#0a1628;--navy-mid:#112240;--navy-light:#1a3a5c;--red:#dc2626;--red-hover:#b91c1c;--red-light:#fef2f2;--gold:#f59e0b;--white:#ffffff;--off-white:#f8fafc;--gray-100:#f1f5f9;--gray-200:#e2e8f0;--gray-400:#94a3b8;--gray-600:#475569;--gray-800:#1e293b;--text:#0f172a;--radius:12px;--radius-sm:6px;--shadow:0 4px 24px rgba(0,0,0,0.10);--shadow-lg:0 8px 48px rgba(0,0,0,0.18);--transition:0.3s ease}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+.icon{display:inline-block;width:1em;height:1em;fill:currentColor;vertical-align:middle;flex-shrink:0}
+.icon-lg{width:2em;height:2em}
+.icon-xl{width:3em;height:3em}
+
+.lang-bar{background:var(--navy);padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.08)}
+.lang-bar .container{display:flex;justify-content:flex-end;align-items:center;gap:6px}
+.lang-btn{color:var(--gray-400);font-size:12px;font-weight:600;letter-spacing:0.08em;padding:4px 10px;border-radius:20px;transition:var(--transition);font-family:'Raleway',sans-serif;text-transform:uppercase}
+.lang-btn:hover{color:var(--white)}
+.lang-btn.active{background:var(--red);color:var(--white)}
+.lang-divider{color:rgba(255,255,255,0.2);font-size:11px}
+.nav{background:var(--white);box-shadow:0 2px 16px rgba(0,0,0,0.08);position:sticky;top:0;z-index:1000}
+.nav.scrolled{background:rgba(255,255,255,0.97);backdrop-filter:blur(12px)}
+.nav .container{display:flex;align-items:center;justify-content:space-between;height:72px}
+.nav-logo img{height:52px;width:auto;object-fit:contain}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-family:'Raleway',sans-serif;font-weight:600;font-size:14px;letter-spacing:0.04em;color:var(--navy);transition:color var(--transition);position:relative;padding-bottom:4px}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--red);transition:width var(--transition)}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-links a:hover,.nav-links a.active{color:var(--red)}
+.nav-cta{background:var(--red);color:var(--white)!important;padding:10px 22px;border-radius:6px;font-family:'Raleway',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.06em;transition:background var(--transition)!important}
+.nav-cta:hover{background:var(--red-hover)!important}
+.nav-cta::after{display:none!important}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:6px;cursor:pointer}
+.hamburger span{display:block;width:24px;height:2px;background:var(--navy);border-radius:2px;transition:var(--transition)}
+.mobile-menu{display:none;background:var(--white);border-top:1px solid var(--gray-200);padding:16px 0}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:12px 24px;font-family:'Raleway',sans-serif;font-weight:600;font-size:15px;color:var(--navy);border-bottom:1px solid var(--gray-100)}
+.mobile-menu a:hover{background:var(--gray-100);color:var(--red)}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+section{padding:80px 0}
+.section-label{font-family:'Raleway',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+.section-title{font-family:'Raleway',sans-serif;font-size:clamp(1.8rem,3.5vw,2.4rem);font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:16px;letter-spacing:-0.01em}
+.section-subtitle{font-size:1.05rem;color:var(--gray-600);max-width:560px;line-height:1.7}
+
+/* PAGE HERO */
+.page-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);padding:72px 0;position:relative;overflow:hidden}
+.page-hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1600&q=80&auto=format&fit=crop') center/cover no-repeat;opacity:0.08}
+.page-hero-content{position:relative;z-index:1}
+.breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:16px;font-size:13px;color:rgba(255,255,255,0.5)}
+.breadcrumb a{color:rgba(255,255,255,0.5);transition:color var(--transition)}
+.breadcrumb a:hover{color:var(--white)}
+.breadcrumb span{color:rgba(255,255,255,0.3)}
+.page-hero h1{font-family:'Raleway',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:16px;letter-spacing:-0.02em}
+.page-hero p{font-size:1.05rem;color:rgba(255,255,255,0.7);max-width:600px}
+
+/* STORY SECTION */
+.story-layout{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.story-image{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg)}
+.story-image img{width:100%;height:500px;object-fit:cover}
+.story-badge{position:absolute;bottom:28px;right:28px;background:var(--red);color:var(--white);padding:16px 20px;border-radius:var(--radius);text-align:center}
+.story-badge .badge-num{font-family:'Raleway',sans-serif;font-size:2rem;font-weight:900;line-height:1}
+.story-badge .badge-text{font-size:12px;font-weight:600;letter-spacing:0.05em;margin-top:2px}
+.story-content p{font-size:1.05rem;color:var(--gray-600);line-height:1.8;margin-bottom:20px}
+.story-highlight{background:var(--red-light);border-left:4px solid var(--red);padding:18px 22px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;margin:24px 0;font-size:1rem;color:var(--navy);font-weight:500;line-height:1.6}
+
+/* VALUES */
+.values-section{background:var(--off-white)}
+.values-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px}
+.value-card{background:var(--white);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);border:1px solid var(--gray-200);text-align:center;transition:transform var(--transition),box-shadow var(--transition)}
+.value-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.value-icon{width:64px;height:64px;background:var(--red-light);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--red);margin:0 auto 20px}
+.value-card h3{font-family:'Raleway',sans-serif;font-size:1.05rem;font-weight:800;color:var(--navy);margin-bottom:10px}
+.value-card p{font-size:14px;color:var(--gray-600);line-height:1.65}
+
+/* STATS BAND */
+.stats-band{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);padding:60px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center}
+.stat-item .stat-num{font-family:'Raleway',sans-serif;font-size:2.5rem;font-weight:900;color:var(--white);line-height:1}
+.stat-item .stat-label{font-size:13px;color:rgba(255,255,255,0.6);letter-spacing:0.08em;text-transform:uppercase;margin-top:8px;font-family:'Raleway',sans-serif}
+.stat-divider{width:1px;background:rgba(255,255,255,0.1);height:60px;align-self:center}
+
+/* PARTNERS */
+.partners-section{background:var(--white)}
+.partners-layout{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.partners-img{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg)}
+.partners-img img{width:100%;height:360px;object-fit:cover}
+.partner-badge{display:inline-flex;align-items:center;gap:12px;background:var(--off-white);border:1px solid var(--gray-200);padding:16px 20px;border-radius:var(--radius);margin-top:24px}
+.partner-badge img{height:40px;width:auto}
+.partner-badge-text h4{font-family:'Raleway',sans-serif;font-weight:700;font-size:14px;color:var(--navy)}
+.partner-badge-text p{font-size:12px;color:var(--gray-400)}
+
+/* CERTIFICATIONS */
+.certs-section{background:var(--navy);padding:60px 0}
+.certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:40px}
+.cert-item{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius);padding:24px;text-align:center;transition:background var(--transition)}
+.cert-item:hover{background:rgba(255,255,255,0.1)}
+.cert-item .icon{color:var(--red);font-size:2em;margin-bottom:12px}
+.cert-item h4{font-family:'Raleway',sans-serif;font-weight:700;color:var(--white);font-size:14px;margin-bottom:6px}
+.cert-item p{font-size:12px;color:rgba(255,255,255,0.55);line-height:1.5}
+
+/* CTA */
+.cta-section{background:var(--red);padding:70px 0}
+.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.cta-inner h2{font-family:'Raleway',sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;color:var(--white);max-width:500px;line-height:1.25}
+.cta-inner p{color:rgba(255,255,255,0.8);font-size:15px;margin-top:8px}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:var(--white);padding:15px 30px;border-radius:var(--radius-sm);font-family:'Raleway',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.04em;transition:background var(--transition),transform var(--transition),box-shadow var(--transition);box-shadow:0 4px 20px rgba(220,38,38,0.35)}
+.btn-primary:hover{background:var(--red-hover);transform:translateY(-2px)}
+.btn-white{display:inline-flex;align-items:center;gap:10px;background:var(--white);color:var(--red);padding:15px 32px;border-radius:var(--radius-sm);font-family:'Raleway',sans-serif;font-weight:800;font-size:15px;letter-spacing:0.04em;transition:transform var(--transition),box-shadow var(--transition);box-shadow:0 4px 20px rgba(0,0,0,0.15)}
+.btn-white:hover{transform:translateY(-2px)}
+
+.footer{background:#060e1c;padding:64px 0 0}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,0.08)}
+.footer-brand img{height:48px;margin-bottom:16px}
+.footer-brand p{color:rgba(255,255,255,0.55);font-size:14px;line-height:1.7;max-width:280px}
+.footer-social{display:flex;gap:12px;margin-top:20px}
+.social-btn{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.07);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.6);transition:background var(--transition),color var(--transition)}
+.social-btn:hover{background:var(--red);color:var(--white)}
+.footer-col h4{font-family:'Raleway',sans-serif;font-size:13px;font-weight:700;color:var(--white);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:20px}
+.footer-col ul li{margin-bottom:10px}
+.footer-col ul li a{color:rgba(255,255,255,0.55);font-size:14px;transition:color var(--transition)}
+.footer-col ul li a:hover{color:var(--white)}
+.footer-bottom{padding:20px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.footer-bottom p{color:rgba(255,255,255,0.35);font-size:13px}
+
+.reveal{opacity:0;transform:translateY(32px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal.in{opacity:1;transform:none}
+.rl{opacity:0;transform:translateX(-32px);transition:opacity 0.7s ease,transform 0.7s ease}
+.rl.in{opacity:1;transform:none}
+.rr{opacity:0;transform:translateX(32px);transition:opacity 0.7s ease,transform 0.7s ease}
+.rr.in{opacity:1;transform:none}
+
+@media(max-width:900px){.story-layout,.partners-layout{grid-template-columns:1fr}.story-image,.partners-img{display:none}.stats-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}section{padding:56px 0}.cta-inner{flex-direction:column;text-align:center}}
+@media(max-width:540px){.footer-grid{grid-template-columns:1fr}.stats-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="ic-phone" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+  <symbol id="ic-check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  <symbol id="ic-shield" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+  <symbol id="ic-car" viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-5h14v5zM7.5 14c-.83 0-1.5.67-1.5 1.5S6.67 17 7.5 17s1.5-.67 1.5-1.5S8.33 14 7.5 14zm9 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/></svg>
+  <symbol id="ic-heart" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+  <symbol id="ic-star" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+  <symbol id="ic-users" viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+  <symbol id="ic-quality" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+  <symbol id="ic-map" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+  <symbol id="ic-wrench" viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+  <symbol id="ic-fb" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+  <symbol id="ic-ig" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white"/></symbol>
+  <symbol id="ic-gg" viewBox="0 0 24 24"><path d="M21.35 11.1H12.18V13.83H18.69C18.36 17.64 15.19 19.27 12.19 19.27C8.36 19.27 5 16.25 5 12C5 7.9 8.2 4.73 12.2 4.73C15.29 4.73 17.1 6.7 17.1 6.7L19 4.72C19 4.72 16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12C2.03 17.05 6.16 22 12.25 22C17.6 22 21.5 18.33 21.5 12.91C21.5 11.76 21.35 11.1 21.35 11.1Z"/></svg>
+  <symbol id="ic-arrow-right" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+</svg>
+
+<div class="lang-bar">
+  <div class="container">
+    <button class="lang-btn active" onclick="setLang('en')">EN</button>
+    <span class="lang-divider">|</span>
+    <button class="lang-btn" onclick="setLang('es')">ES</button>
+    <span class="lang-divider">|</span>
+    <button class="lang-btn" onclick="setLang('pt')">PT</button>
+  </div>
+</div>
+
+<nav class="nav" id="mainNav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <img src="https://static.wixstatic.com/media/073cd2_dcad4a7b3d1e4235bcc4277741e4fbac~mv2.png/v1/fill/w_1200,h_960,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/fulllogo_transparent.png" alt="Pro Fix Auto"/>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-en="Home" data-es="Inicio" data-pt="Início">Home</a></li>
+      <li><a href="services.html" data-en="Services" data-es="Servicios" data-pt="Serviços">Services</a></li>
+      <li><a href="about.html" class="active" data-en="About Us" data-es="Nosotros" data-pt="Sobre Nós">About Us</a></li>
+      <li><a href="reviews.html" data-en="Reviews" data-es="Reseñas" data-pt="Avaliações">Reviews</a></li>
+      <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-pt="Contato">Contact</a></li>
+      <li><a href="https://myalp.io/ultnvt" target="_blank" class="nav-cta" data-en="Book Appointment" data-es="Reservar Cita" data-pt="Agendar Consulta">Book Appointment</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" data-en="Home" data-es="Inicio" data-pt="Início">Home</a>
+    <a href="services.html" data-en="Services" data-es="Servicios" data-pt="Serviços">Services</a>
+    <a href="about.html" data-en="About Us" data-es="Nosotros" data-pt="Sobre Nós">About Us</a>
+    <a href="reviews.html" data-en="Reviews" data-es="Reseñas" data-pt="Avaliações">Reviews</a>
+    <a href="contact.html" data-en="Contact" data-es="Contacto" data-pt="Contato">Contact</a>
+    <a href="https://myalp.io/ultnvt" target="_blank" data-en="Book Appointment" data-es="Reservar Cita" data-pt="Agendar Consulta">Book Appointment</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="container page-hero-content">
+    <div class="breadcrumb">
+      <a href="index.html" data-en="Home" data-es="Inicio" data-pt="Início">Home</a>
+      <span>›</span>
+      <span data-en="About Us" data-es="Nosotros" data-pt="Sobre Nós">About Us</span>
+    </div>
+    <h1 data-en="About Pro Fix Auto" data-es="Sobre Pro Fix Auto" data-pt="Sobre a Pro Fix Auto">About Pro Fix Auto</h1>
+    <p data-en="Serving Marietta and the greater Atlanta area with honest, expert auto repair and collision services." data-es="Sirviendo a Marietta y el área metropolitana de Atlanta con servicios honestos de reparación y colisión." data-pt="Servindo Marietta e a grande área de Atlanta com serviços honestos de reparo e colisão.">Serving Marietta and the greater Atlanta area with honest, expert auto repair and collision services.</p>
+  </div>
+</div>
+
+<!-- STORY -->
+<section>
+  <div class="container">
+    <div class="story-layout">
+      <div class="story-image rl">
+        <img src="https://images.unsplash.com/photo-1632823471565-1ecdf5c6da3e?w=900&q=80&auto=format&fit=crop" alt="Pro Fix Auto shop" loading="lazy"/>
+        <div class="story-badge">
+          <div class="badge-num">5+</div>
+          <div class="badge-text" data-en="YEARS SERVING<br>MARIETTA" data-es="AÑOS SIRVIENDO<br>MARIETTA" data-pt="ANOS SERVINDO<br>MARIETTA">YEARS SERVING<br>MARIETTA</div>
+        </div>
+      </div>
+      <div class="rr">
+        <div class="section-label" data-en="Our Story" data-es="Nuestra Historia" data-pt="Nossa História">Our Story</div>
+        <h2 class="section-title" data-en="Built on Trust, Driven by Excellence" data-es="Construido en Confianza, Impulsado por la Excelencia" data-pt="Construído na Confiança, Movido pela Excelência">Built on Trust, Driven by Excellence</h2>
+        <div class="story-content">
+          <p data-en="Pro Fix Auto Repair &amp; Collision Inc. was founded with a single mission: to provide Marietta and the surrounding Atlanta community with honest, high-quality auto repair and collision services at fair prices." data-es="Pro Fix Auto Repair &amp; Collision Inc. fue fundada con una sola misión: proporcionar a Marietta y la comunidad circundante de Atlanta servicios honestos y de alta calidad de reparación de automóviles y colisiones a precios justos." data-pt="A Pro Fix Auto Repair &amp; Collision Inc. foi fundada com uma única missão: fornecer a Marietta e à comunidade da Grande Atlanta serviços honestos e de alta qualidade de reparo e colisão a preços justos.">Pro Fix Auto Repair &amp; Collision Inc. was founded with a single mission: to provide Marietta and the surrounding Atlanta community with honest, high-quality auto repair and collision services at fair prices.</p>
+          <p data-en="Our team of certified professionals brings decades of combined experience to every job — from routine oil changes to complex collision repairs. We believe every customer deserves transparent communication, expert workmanship, and a vehicle that's returned in better condition than it arrived." data-es="Nuestro equipo de profesionales certificados aporta décadas de experiencia combinada a cada trabajo, desde cambios de aceite rutinarios hasta reparaciones de colisiones complejas." data-pt="Nossa equipe de profissionais certificados traz décadas de experiência combinada para cada trabalho — desde trocas de óleo de rotina a reparos de colisão complexos.">Our team of certified professionals brings decades of combined experience to every job — from routine oil changes to complex collision repairs. We believe every customer deserves transparent communication, expert workmanship, and a vehicle that's returned in better condition than it arrived.</p>
+          <div class="story-highlight" data-en="We are proud to be a certified Sherwin Williams paint partner, ensuring every finish we apply meets the highest standards of quality and durability." data-es="Nos enorgullece ser un socio certificado de pintura Sherwin Williams, asegurando que cada acabado que aplicamos cumpla con los más altos estándares de calidad." data-pt="Temos orgulho de ser um parceiro certificado de tintas Sherwin Williams, garantindo que cada acabamento que aplicamos atenda aos mais altos padrões de qualidade.">We are proud to be a certified Sherwin Williams paint partner, ensuring every finish we apply meets the highest standards of quality and durability.</div>
+          <p data-en="Whether you've been in an accident, have a check engine light on, or just need your routine maintenance done right — Pro Fix Auto is here for you, Monday through Friday, 8AM to 6PM." data-es="Ya sea que haya tenido un accidente, tenga una luz de verificación del motor encendida, o simplemente necesite su mantenimiento de rutina — Pro Fix Auto está aquí para usted, de lunes a viernes, 8AM a 6PM." data-pt="Seja após um acidente, com a luz de verificação do motor acesa, ou simplesmente precisando de manutenção — a Pro Fix Auto está aqui para você, de segunda a sexta, das 8h às 18h.">Whether you've been in an accident, have a check engine light on, or just need your routine maintenance done right — Pro Fix Auto is here for you, Monday through Friday, 8AM to 6PM.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-band">
+  <div class="container">
+    <div class="stats-grid reveal">
+      <div class="stat-item">
+        <div class="stat-num">5+</div>
+        <div class="stat-label" data-en="Years in Business" data-es="Años en Negocio" data-pt="Anos no Negócio">Years in Business</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">All</div>
+        <div class="stat-label" data-en="Insurances Accepted" data-es="Seguros Aceptados" data-pt="Seguros Aceitos">Insurances Accepted</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100%</div>
+        <div class="stat-label" data-en="Certified Techs" data-es="Técnicos Certificados" data-pt="Técnicos Certificados">Certified Techs</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">5★</div>
+        <div class="stat-label" data-en="Customer Service" data-es="Servicio al Cliente" data-pt="Atendimento ao Cliente">Customer Service</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VALUES -->
+<section class="values-section">
+  <div class="container">
+    <div class="section-header reveal" style="text-align:center">
+      <div class="section-label" data-en="Our Values" data-es="Nuestros Valores" data-pt="Nossos Valores">Our Values</div>
+      <h2 class="section-title" data-en="What Drives Us Every Day" data-es="Lo Que Nos Impulsa Cada Día" data-pt="O Que Nos Move a Cada Dia">What Drives Us Every Day</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <div class="value-icon"><svg class="icon icon-lg"><use href="#ic-shield"/></svg></div>
+        <h3 data-en="Integrity" data-es="Integridad" data-pt="Integridade">Integrity</h3>
+        <p data-en="We tell you what your vehicle needs — nothing more, nothing less. Honest assessments and transparent pricing, always." data-es="Le decimos lo que su vehículo necesita, nada más y nada menos. Evaluaciones honestas y precios transparentes, siempre." data-pt="Dizemos o que seu veículo precisa — nada mais, nada menos. Avaliações honestas e preços transparentes, sempre.">We tell you what your vehicle needs — nothing more, nothing less. Honest assessments and transparent pricing, always.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon"><svg class="icon icon-lg"><use href="#ic-quality"/></svg></div>
+        <h3 data-en="Quality" data-es="Calidad" data-pt="Qualidade">Quality</h3>
+        <p data-en="From premium Sherwin Williams paint to OEM-grade parts — we never cut corners on the quality of our work." data-es="Desde pintura premium Sherwin Williams hasta piezas de calidad OEM — nunca escatimamos en la calidad de nuestro trabajo." data-pt="De tinta premium Sherwin Williams a peças de qualidade OEM — nunca cortamos caminho na qualidade do nosso trabalho.">From premium Sherwin Williams paint to OEM-grade parts — we never cut corners on the quality of our work.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon"><svg class="icon icon-lg"><use href="#ic-users"/></svg></div>
+        <h3 data-en="Community" data-es="Comunidad" data-pt="Comunidade">Community</h3>
+        <p data-en="We're proud to serve Marietta and the Atlanta metro area. Our neighbors are our customers, and their trust means everything to us." data-es="Nos enorgullece servir a Marietta y el área metropolitana de Atlanta. Nuestros vecinos son nuestros clientes." data-pt="Temos orgulho de servir Marietta e a área metropolitana de Atlanta. Nossos vizinhos são nossos clientes.">We're proud to serve Marietta and the Atlanta metro area. Our neighbors are our customers, and their trust means everything to us.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon"><svg class="icon icon-lg"><use href="#ic-wrench"/></svg></div>
+        <h3 data-en="Expertise" data-es="Experiencia" data-pt="Experiência">Expertise</h3>
+        <p data-en="Our technicians are continuously trained on the latest automotive technology to handle every make and model with precision." data-es="Nuestros técnicos se capacitan continuamente en las últimas tecnologías automotrices para manejar cada marca y modelo." data-pt="Nossos técnicos são continuamente treinados nas mais recentes tecnologias automotivas para lidar com todas as marcas.">Our technicians are continuously trained on the latest automotive technology to handle every make and model with precision.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHERWIN PARTNER -->
+<section class="partners-section">
+  <div class="container">
+    <div class="partners-layout">
+      <div class="partners-img rl">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80&auto=format&fit=crop" alt="Paint and refinishing work" loading="lazy"/>
+      </div>
+      <div class="rr">
+        <div class="section-label" data-en="Our Partners" data-es="Nuestros Socios" data-pt="Nossos Parceiros">Our Partners</div>
+        <h2 class="section-title" data-en="Proud Sherwin Williams Paint Partner" data-es="Orgulloso Socio de Pintura Sherwin Williams" data-pt="Orgulhoso Parceiro de Tintas Sherwin Williams">Proud Sherwin Williams Paint Partner</h2>
+        <p class="section-subtitle" data-en="We've partnered with Sherwin Williams Automotive Finishes — the industry's leading paint manufacturer — to deliver factory-quality finishes on every vehicle we paint." data-es="Nos hemos asociado con Sherwin Williams Automotive Finishes para ofrecer acabados de calidad de fábrica en cada vehículo que pintamos." data-pt="Nos associamos à Sherwin Williams Automotive Finishes para oferecer acabamentos de qualidade de fábrica em cada veículo que pintamos.">We've partnered with Sherwin Williams Automotive Finishes — the industry's leading paint manufacturer — to deliver factory-quality finishes on every vehicle we paint.</p>
+        <p style="margin-top:16px;font-size:14px;color:var(--gray-600);line-height:1.7" data-en="Using their advanced computerized color-matching system, we can perfectly replicate any factory color — whether your car needs a touch-up or a full respray. Every coat is applied with precision and protected with high-durability clear coat." data-es="Usando su avanzado sistema de igualación de colores computarizado, podemos replicar perfectamente cualquier color de fábrica. Cada capa se aplica con precisión y se protege con un barniz de alta durabilidad." data-pt="Usando seu avançado sistema computadorizado de correspondência de cores, podemos replicar perfeitamente qualquer cor de fábrica. Cada camada é aplicada com precisão.">Using their advanced computerized color-matching system, we can perfectly replicate any factory color — whether your car needs a touch-up or a full respray. Every coat is applied with precision and protected with high-durability clear coat.</p>
+        <div class="partner-badge">
+          <img src="https://static.wixstatic.com/media/073cd2_25498a54550b44449b8359ec9313b0da~mv2.png/v1/fill/w_600,h_170,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/PikPng_com_sherwin-williams-logo-png_3063727.png" alt="Sherwin Williams" style="height:36px;width:auto"/>
+          <div class="partner-badge-text">
+            <h4 data-en="Certified Paint Partner" data-es="Socio Certificado de Pintura" data-pt="Parceiro Certificado de Tintas">Certified Paint Partner</h4>
+            <p data-en="Premium automotive finishes" data-es="Acabados automotrices premium" data-pt="Acabamentos automotivos premium">Premium automotive finishes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="certs-section">
+  <div class="container">
+    <div class="section-header reveal" style="text-align:center">
+      <div class="section-label" style="color:rgba(255,255,255,0.5)" data-en="Our Credentials" data-es="Nuestras Credenciales" data-pt="Nossas Credenciais">Our Credentials</div>
+      <h2 class="section-title" style="color:var(--white)" data-en="Why You Can Trust Us" data-es="Por Qué Puede Confiar en Nosotros" data-pt="Por Que Você Pode Confiar em Nós">Why You Can Trust Us</h2>
+    </div>
+    <div class="certs-grid reveal">
+      <div class="cert-item">
+        <svg class="icon icon-xl"><use href="#ic-shield"/></svg>
+        <h4 data-en="Certified Technicians" data-es="Técnicos Certificados" data-pt="Técnicos Certificados">Certified Technicians</h4>
+        <p data-en="All mechanics are trained and certified professionals." data-es="Todos los mecánicos son profesionales capacitados y certificados." data-pt="Todos os mecânicos são profissionais treinados e certificados.">All mechanics are trained and certified professionals.</p>
+      </div>
+      <div class="cert-item">
+        <svg class="icon icon-xl"><use href="#ic-quality"/></svg>
+        <h4 data-en="Insurance Specialists" data-es="Especialistas en Seguros" data-pt="Especialistas em Seguros">Insurance Specialists</h4>
+        <p data-en="Direct insurance billing — we handle your claim from start to finish." data-es="Facturación directa a seguros — manejamos su reclamo de principio a fin." data-pt="Faturamento direto ao seguro — gerenciamos seu sinistro do início ao fim.">Direct insurance billing — we handle your claim from start to finish.</p>
+      </div>
+      <div class="cert-item">
+        <svg class="icon icon-xl"><use href="#ic-star"/></svg>
+        <h4 data-en="Sherwin Williams Partner" data-es="Socio Sherwin Williams" data-pt="Parceiro Sherwin Williams">Sherwin Williams Partner</h4>
+        <p data-en="Authorized partner using premium paint products for factory-quality finishes." data-es="Socio autorizado que usa productos de pintura premium para acabados de calidad de fábrica." data-pt="Parceiro autorizado usando produtos de tinta premium para acabamentos de qualidade de fábrica.">Authorized partner using premium paint products for factory-quality finishes.</p>
+      </div>
+      <div class="cert-item">
+        <svg class="icon icon-xl"><use href="#ic-users"/></svg>
+        <h4 data-en="Fleet Certified" data-es="Certificado para Flotas" data-pt="Certificado para Frotas">Fleet Certified</h4>
+        <p data-en="Approved provider for fleet and dealer vehicle servicing." data-es="Proveedor aprobado para el servicio de vehículos de flotillas y concesionarios." data-pt="Fornecedor aprovado para serviço de veículos de frota e revendedores.">Approved provider for fleet and dealer vehicle servicing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <h2 data-en="Come Meet Our Team" data-es="Venga a Conocer Nuestro Equipo" data-pt="Venha Conhecer Nossa Equipe">Come Meet Our Team</h2>
+        <p data-en="Visit us at 1460 Roswell Rd, Marietta, GA — Mon–Fri, 8AM to 6PM." data-es="Visítenos en 1460 Roswell Rd, Marietta, GA — Lunes–Viernes, 8AM a 6PM." data-pt="Visite-nos em 1460 Roswell Rd, Marietta, GA — Seg–Sex, 8h às 18h.">Visit us at 1460 Roswell Rd, Marietta, GA — Mon–Fri, 8AM to 6PM.</p>
+      </div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap">
+        <a href="https://myalp.io/ultnvt" target="_blank" class="btn-white">
+          <svg class="icon"><use href="#ic-car"/></svg>
+          <span data-en="Book Appointment" data-es="Reservar Cita" data-pt="Agendar Consulta">Book Appointment</span>
+        </a>
+        <a href="contact.html" class="btn-white" style="background:transparent;color:var(--white);border:2px solid rgba(255,255,255,0.4)">
+          <span data-en="Get Directions" data-es="Obtener Indicaciones" data-pt="Obter Direções">Get Directions</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://static.wixstatic.com/media/073cd2_dcad4a7b3d1e4235bcc4277741e4fbac~mv2.png/v1/fill/w_1200,h_960,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/fulllogo_transparent.png" alt="Pro Fix Auto"/>
+        <p data-en="Full-service auto repair and collision center in Marietta, GA." data-es="Taller de reparación de autos en Marietta, GA." data-pt="Centro completo de reparo em Marietta, GA.">Full-service auto repair and collision center in Marietta, GA.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn"><svg class="icon"><use href="#ic-fb"/></svg></a>
+          <a href="#" class="social-btn"><svg class="icon"><use href="#ic-ig"/></svg></a>
+          <a href="#" class="social-btn"><svg class="icon"><use href="#ic-gg"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Quick Links" data-es="Enlaces" data-pt="Links">Quick Links</h4>
+        <ul>
+          <li><a href="index.html" data-en="Home" data-es="Inicio" data-pt="Início">Home</a></li>
+          <li><a href="services.html" data-en="Services" data-es="Servicios" data-pt="Serviços">Services</a></li>
+          <li><a href="about.html" data-en="About Us" data-es="Nosotros" data-pt="Sobre Nós">About Us</a></li>
+          <li><a href="reviews.html" data-en="Reviews" data-es="Reseñas" data-pt="Avaliações">Reviews</a></li>
+          <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-pt="Contato">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Services" data-es="Servicios" data-pt="Serviços">Services</h4>
+        <ul>
+          <li><a href="services.html" data-en="Maintenance" data-es="Mantenimiento" data-pt="Manutenção">Maintenance</a></li>
+          <li><a href="services.html" data-en="Collision Repair" data-es="Colisiones" data-pt="Colisão">Collision Repair</a></li>
+          <li><a href="services.html" data-en="Paint & Refinishing" data-es="Pintura" data-pt="Pintura">Paint &amp; Refinishing</a></li>
+          <li><a href="services.html" data-en="A/C & Heating" data-es="A/C" data-pt="A/C">A/C &amp; Heating</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Contact" data-es="Contacto" data-pt="Contato">Contact</h4>
+        <ul>
+          <li><a href="tel:7702657023">(770) 265-7023</a></li>
+          <li><a href="#">1460 Roswell Rd<br>Marietta, GA</a></li>
+          <li><a href="https://myalp.io/ultnvt" target="_blank" data-en="Book Online" data-es="Reservar" data-pt="Agendar">Book Online</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="&copy; 2024 Pro Fix Auto Repair &amp; Collision Inc. All rights reserved." data-es="&copy; 2024 Pro Fix Auto Repair &amp; Collision Inc. Todos los derechos reservados." data-pt="&copy; 2024 Pro Fix Auto Repair &amp; Collision Inc. Todos os direitos reservados.">&copy; 2024 Pro Fix Auto Repair &amp; Collision Inc. All rights reserved.</p>
+      <p>1460 Roswell Rd, Marietta, GA &mdash; (770) 265-7023</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const LANG_KEY='profix_lang';
+let currentLang=localStorage.getItem(LANG_KEY)||'en';
+function setLang(lang){currentLang=lang;localStorage.setItem(LANG_KEY,lang);document.querySelectorAll('[data-en]').forEach(el=>{const v=el.getAttribute('data-'+lang);if(v)el.innerHTML=v;});document.querySelectorAll('.lang-btn').forEach(b=>{b.classList.toggle('active',b.textContent.toLowerCase()===lang);});document.documentElement.lang=lang;}
+setLang(currentLang);
+window.addEventListener('scroll',()=>{document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>40);});
+document.getElementById('hamburger').addEventListener('click',()=>{document.getElementById('mobileMenu').classList.toggle('open');});
+const obs=new IntersectionObserver((e)=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in');});},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal,.rl,.rr').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
