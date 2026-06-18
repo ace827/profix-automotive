@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title data-en="Services | Pro Fix Auto Repair & Collision" data-es="Servicios | Pro Fix Auto Repair & Colisión" data-pt="Serviços | Pro Fix Auto Reparo & Colisão">Services | Pro Fix Auto Repair &amp; Collision</title>
+<meta name="description" content="Full-service auto repair and collision services in Marietta, GA. Routine maintenance, engine repair, collision repair, paint & refinishing, A/C service."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#0a1628;--navy-mid:#112240;--navy-light:#1a3a5c;--red:#dc2626;--red-hover:#b91c1c;--red-light:#fef2f2;--gold:#f59e0b;--white:#ffffff;--off-white:#f8fafc;--gray-100:#f1f5f9;--gray-200:#e2e8f0;--gray-400:#94a3b8;--gray-600:#475569;--gray-800:#1e293b;--text:#0f172a;--radius:12px;--radius-sm:6px;--shadow:0 4px 24px rgba(0,0,0,0.10);--shadow-lg:0 8px 48px rgba(0,0,0,0.18);--transition:0.3s ease}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--text);background:var(--white);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+.icon{display:inline-block;width:1em;height:1em;fill:currentColor;vertical-align:middle;flex-shrink:0}
+.icon-lg{width:2em;height:2em}
+.icon-xl{width:3em;height:3em}
+
+.lang-bar{background:var(--navy);padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.08)}
+.lang-bar .container{display:flex;justify-content:flex-end;align-items:center;gap:6px}
+.lang-btn{color:var(--gray-400);font-size:12px;font-weight:600;letter-spacing:0.08em;padding:4px 10px;border-radius:20px;transition:var(--transition);font-family:'Raleway',sans-serif;text-transform:uppercase}
+.lang-btn:hover{color:var(--white)}
+.lang-btn.active{background:var(--red);color:var(--white)}
+.lang-divider{color:rgba(255,255,255,0.2);font-size:11px}
+
+.nav{background:var(--white);box-shadow:0 2px 16px rgba(0,0,0,0.08);position:sticky;top:0;z-index:1000}
+.nav.scrolled{background:rgba(255,255,255,0.97);backdrop-filter:blur(12px)}
+.nav .container{display:flex;align-items:center;justify-content:space-between;height:72px}
+.nav-logo img{height:52px;width:auto;object-fit:contain}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-family:'Raleway',sans-serif;font-weight:600;font-size:14px;letter-spacing:0.04em;color:var(--navy);transition:color var(--transition);position:relative;padding-bottom:4px}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--red);transition:width var(--transition)}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-links a:hover,.nav-links a.active{color:var(--red)}
+.nav-cta{background:var(--red);color:var(--white)!important;padding:10px 22px;border-radius:6px;font-family:'Raleway',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.06em;transition:background var(--transition)!important}
+.nav-cta:hover{background:var(--red-hover)!important}
+.nav-cta::after{display:none!important}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:6px;cursor:pointer}
+.hamburger span{display:block;width:24px;height:2px;background:var(--navy);border-radius:2px;transition:var(--transition)}
+.mobile-menu{display:none;background:var(--white);border-top:1px solid var(--gray-200);padding:16px 0}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:12px 24px;font-family:'Raleway',sans-serif;font-weight:600;font-size:15px;color:var(--navy);border-bottom:1px solid var(--gray-100)}
+.mobile-menu a:hover{background:var(--gray-100);color:var(--red)}
+
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* PAGE HERO */
+.page-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);padding:72px 0;position:relative;overflow:hidden}
+.page-hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1600&q=80&auto=format&fit=crop') center/cover no-repeat;opacity:0.08}
+.page-hero-content{position:relative;z-index:1}
+.breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:16px;font-size:13px;color:rgba(255,255,255,0.5)}
+.breadcrumb a{color:rgba(255,255,255,0.5);transition:color var(--transition)}
+.breadcrumb a:hover{color:var(--white)}
+.breadcrumb span{color:rgba(255,255,255,0.3)}
+.page-hero h1{font-family:'Raleway',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);margin-bottom:16px;letter-spacing:-0.02em}
+.page-hero p{font-size:1.05rem;color:rgba(255,255,255,0.7);max-width:600px}
+
+section{padding:80px 0}
+.section-label{font-family:'Raleway',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+.section-title{font-family:'Raleway',sans-serif;font-size:clamp(1.8rem,3.5vw,2.4rem);font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:16px;letter-spacing:-0.01em}
+.section-subtitle{font-size:1.05rem;color:var(--gray-600);max-width:560px;line-height:1.7}
+.section-header{margin-bottom:56px}
+
+/* SERVICE DETAIL CARDS */
+.service-detail{background:var(--white);border-radius:var(--radius);padding:0;box-shadow:var(--shadow);border:1px solid var(--gray-200);overflow:hidden;transition:box-shadow var(--transition)}
+.service-detail:hover{box-shadow:var(--shadow-lg)}
+.sd-header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);padding:28px 32px;display:flex;align-items:center;gap:20px}
+.sd-icon{width:56px;height:56px;background:rgba(220,38,38,0.2);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--red);flex-shrink:0}
+.sd-header h2{font-family:'Raleway',sans-serif;font-size:1.3rem;font-weight:800;color:var(--white)}
+.sd-header p{font-size:13px;color:rgba(255,255,255,0.6);margin-top:4px}
+.sd-body{padding:32px}
+.sd-list{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;margin-bottom:24px}
+.sd-list li{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--gray-800)}
+.sd-list li .icon{color:var(--red);font-size:0.9em;flex-shrink:0}
+.sd-note{background:var(--red-light);border-left:3px solid var(--red);padding:14px 18px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:14px;color:var(--gray-800);font-weight:500}
+
+.services-main-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+
+/* PROCESS SECTION */
+.process-section{background:var(--off-white)}
+.process-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;position:relative}
+.process-steps::before{content:'';position:absolute;top:32px;left:10%;right:10%;height:2px;background:linear-gradient(to right,var(--red),transparent);z-index:0}
+.step-item{text-align:center;position:relative;z-index:1}
+.step-num{width:64px;height:64px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Raleway',sans-serif;font-size:1.4rem;font-weight:900;color:var(--white);margin:0 auto 16px;box-shadow:0 4px 16px rgba(220,38,38,0.3)}
+.step-item h4{font-family:'Raleway',sans-serif;font-weight:700;color:var(--navy);margin-bottom:8px}
+.step-item p{font-size:13px;color:var(--gray-600);line-height:1.6}
+
+/* PRICING NOTE */
+.pricing-section{background:var(--navy);padding:60px 0}
+.pricing-inner{display:grid;grid-template-columns:1fr 1fr 1fr;gap:28px}
+.pricing-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius);padding:28px;text-align:center}
+.pricing-card.featured{background:var(--red);border-color:var(--red)}
+.pricing-card h3{font-family:'Raleway',sans-serif;font-size:1.1rem;font-weight:800;color:var(--white);margin-bottom:8px}
+.pricing-card p{font-size:13px;color:rgba(255,255,255,0.7);line-height:1.6}
+.pricing-card .pricing-icon{font-size:2.5em;color:var(--white);margin-bottom:16px;opacity:0.9}
+
+/* SHERWIN PARTNER */
+.partner-section{background:var(--off-white)}
+.partner-layout{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.partner-img{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg)}
+.partner-img img{width:100%;height:360px;object-fit:cover}
+
+/* CTA BAND */
+.cta-section{background:var(--red);padding:70px 0}
+.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.cta-inner h2{font-family:'Raleway',sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;color:var(--white);max-width:500px;line-height:1.25}
+.cta-inner p{color:rgba(255,255,255,0.8);font-size:15px;margin-top:8px}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:var(--white);padding:15px 30px;border-radius:var(--radius-sm);font-family:'Raleway',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.04em;transition:background var(--transition),transform var(--transition),box-shadow var(--transition);box-shadow:0 4px 20px rgba(220,38,38,0.35)}
+.btn-primary:hover{background:var(--red-hover);transform:translateY(-2px);box-shadow:0 8px 28px rgba(220,38,38,0.45)}
+.btn-white{display:inline-flex;align-items:center;gap:10px;background:var(--white);color:var(--red);padding:15px 32px;border-radius:var(--radius-sm);font-family:'Raleway',sans-serif;font-weight:800;font-size:15px;letter-spacing:0.04em;transition:transform var(--transition),box-shadow var(--transition);box-shadow:0 4px 20px rgba(0,0,0,0.15)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,0.2)}
+
+/* FOOTER */
+.footer{background:#060e1c;padding:64px 0 0}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,0.08)}
+.footer-brand img{height:48px;margin-bottom:16px}
+.footer-brand p{color:rgba(255,255,255,0.55);font-size:14px;line-height:1.7;max-width:280px}
+.footer-social{display:flex;gap:12px;margin-top:20px}
+.social-btn{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.07);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.6);transition:background var(--transition),color var(--transition)}
+.social-btn:hover{background:var(--red);color:var(--white)}
+.footer-col h4{font-family:'Raleway',sans-serif;font-size:13px;font-weight:700;color:var(--white);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:20px}
+.footer-col ul li{margin-bottom:10px}
+.footer-col ul li a{color:rgba(255,255,255,0.55);font-size:14px;transition:color var(--transition)}
+.footer-col ul li a:hover{color:var(--white)}
+.footer-bottom{padding:20px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.footer-bottom p{color:rgba(255,255,255,0.35);font-size:13px}
+
+.reveal{opacity:0;transform:translateY(32px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal.in{opacity:1;transform:none}
+.rl{opacity:0;transform:translateX(-32px);transition:opacity 0.7s ease,transform 0.7s ease}
+.rl.in{opacity:1;transform:none}
+.rr{opacity:0;transform:translateX(32px);transition:opacity 0.7s ease,transform 0.7s ease}
+.rr.in{opacity:1;transform:none}
+
+@media(max-width:900px){
+  .services-main-grid{grid-template-columns:1fr}
+  .partner-layout{grid-template-columns:1fr}
+  .partner-img{display:none}
+  .pricing-inner{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  section{padding:56px 0}
+  .sd-list{grid-template-columns:1fr}
+  .cta-inner{flex-direction:column;text-align:center}
+}
+@media(max-width:540px){
+  .footer-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="ic-phone" viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+  <symbol id="ic-map" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+  <symbol id="ic-check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+  <symbol id="ic-shield" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+  <symbol id="ic-wrench" viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+  <symbol id="ic-car" viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-5h14v5zM7.5 14c-.83 0-1.5.67-1.5 1.5S6.67 17 7.5 17s1.5-.67 1.5-1.5S8.33 14 7.5 14zm9 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/></svg>
+  <symbol id="ic-paint" viewBox="0 0 24 24"><path d="M16 6v-2c0-1.1-.9-2-2-2H4C2.9 2 2 2.9 2 4v3.5C2 8.9 3.1 10 4.5 10S7 8.9 7 7.5V6h4v14c0 1.1.9 2 2 2s2-.9 2-2V6h1zM4.5 8C3.67 8 3 7.33 3 6.5S3.67 5 4.5 5s1.5.67 1.5 1.5S5.33 8 4.5 8z"/></svg>
+  <symbol id="ic-snow" viewBox="0 0 24 24"><path d="M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22z"/></svg>
+  <symbol id="ic-arrow-right" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+  <symbol id="ic-insurance" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+  <symbol id="ic-tools" viewBox="0 0 24 24"><path d="M15.5 2C13 2 11 4 11 6.5c0 .6.1 1.2.3 1.7L2 17.5 4.5 20l9.3-9.3c.5.2 1.1.3 1.7.3C18 11 20 9 20 6.5c0-.5-.1-1-.2-1.4l-2.8 2.8-1.8-1.8 2.8-2.8c-.4-.2-.9-.3-1.5-.3z"/></svg>
+  <symbol id="ic-fb" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+  <symbol id="ic-ig" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="white"/></symbol>
+  <symbol id="ic-gg" viewBox="0 0 24 24"><path d="M21.35 11.1H12.18V13.83H18.69C18.36 17.64 15.19 19.27 12.19 19.27C8.36 19.27 5 16.25 5 12C5 7.9 8.2 4.73 12.2 4.73C15.29 4.73 17.1 6.7 17.1 6.7L19 4.72C19 4.72 16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12C2.03 17.05 6.16 22 12.25 22C17.6 22 21.5 18.33 21.5 12.91C21.5 11.76 21.35 11.1 21.35 11.1Z"/></svg>
+  <symbol id="ic-frame" viewBox="0 0 24 24"><path d="M3 3h7v2H5v5H3V3zm11 0h7v7h-2V5h-5V3zM3 14h2v5h5v2H3v-7zm16 5h-5v2h7v-7h-2v5z"/></svg>
+  <symbol id="ic-spray" viewBox="0 0 24 24"><path d="M10 6c0-1.1.9-2 2-2s2 .9 2 2h2c0-2.21-1.79-4-4-4S8 3.79 8 6v3H4v2h1l1 9h12l1-9h1V9h-4V6h-6zm-2 13l-.75-7h9.5L16 19H8z"/></svg>
+</svg>
+
+<div class="lang-bar">
+  <div class="container">
+    <button class="lang-btn active" onclick="setLang('en')">EN</button>
+    <span class="lang-divider">|</span>
+    <button class="lang-btn" onclick="setLang('es')">ES</button>
+    <span class="lang-divider">|</span>
+    <button class="lang-btn" onclick="setLang('pt')">PT</button>
+  </div>
+</div>
+
+<nav class="nav" id="mainNav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <img src="https://static.wixstatic.com/media/073cd2_dcad4a7b3d1e4235bcc4277741e4fbac~mv2.png/v1/fill/w_1200,h_960,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/fulllogo_transparent.png" alt="Pro Fix Auto"/>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-en="Home" data-es="Inicio" data-pt="Início">Home</a></li>
+      <li><a href="services.html" class="active" data-en="Services" data-es="Servicios" data-pt="Serviços">Services</a></li>
+      <li><a href="about.html" data-en="About Us" data-es="Nosotros" data-pt="Sobre Nós">About Us</a></li>
+      <li><a href="reviews.html" data-en="Reviews" data-es="Reseñas" data-pt="Avaliações">Reviews</a></li>
+      <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-pt="Contato">Contact</a></li>
+      <li><a href="https://myalp.io/ultnvt" target="_blank" class="nav-cta" data-en="Book Appointment" data-es="Reservar Cita" data-pt="Agendar Consulta">Book Appointment</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" data-en="Home" data-es="Inicio" data-pt="Início">Home</a>
+    <a href="services.html" data-en="Services" data-es="Servicios" data-pt="Serviços">Services</a>
+    <a href="about.html" data-en="About Us" data-es="Nosotros" data-pt="Sobre Nós">About Us</a>
+    <a href="reviews.html" data-en="Reviews" data-es="Reseñas" data-pt="Avaliações">Reviews</a>
+    <a href="contact.html" data-en="Contact" data-es="Contacto" data-pt="Contato">Contact</a>
+    <a href="https://myalp.io/ultnvt" target="_blank" data-en="Book Appointment" data-es="Reservar Cita" data-pt="Agendar Consulta">Book Appointment</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="container page-hero-content">
+    <div class="breadcrumb">
+      <a href="index.html" data-en="Home" data-es="Inicio" data-pt="Início">Home</a>
+      <span>›</span>
+      <span data-en="Services" data-es="Servicios" data-pt="Serviços">Services</span>
+    </div>
+    <h1 data-en="Our Services" data-es="Nuestros Servicios" data-pt="Nossos Serviços">Our Services</h1>
+    <p data-en="Comprehensive auto repair and collision services for every make and model. Certified professionals. All insurance accepted." data-es="Servicios completos de reparación de autos y colisiones para todas las marcas y modelos. Profesionales certificados." data-pt="Serviços completos de reparo de automóveis e colisão para todas as marcas e modelos.">Comprehensive auto repair and collision services for every make and model. Certified professionals. All insurance accepted.</p>
+  </div>
+</div>
+
+<!-- MAIN SERVICES -->
+<section>
+  <div class="container">
+    <div class="services-main-grid">
+
+      <div class="service-detail reveal">
+        <div class="sd-header">
+          <div class="sd-icon"><svg class="icon icon-lg"><use href="#ic-wrench"/></svg></div>
+          <div>
+            <h2 data-en="Routine Maintenance" data-es="Mantenimiento de Rutina" data-pt="Manutenção de Rotina">Routine Maintenance</h2>
+            <p data-en="Keep your vehicle in peak condition" data-es="Mantén tu vehículo en condición óptima" data-pt="Mantenha seu veículo em condição ideal">Keep your vehicle in peak condition</p>
+          </div>
+        </div>
+        <div class="sd-body">
+          <ul class="sd-list">
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Oil changes (synthetic &amp; conventional)" data-es="Cambios de aceite (sintético y convencional)" data-pt="Trocas de óleo (sintético e convencional)">Oil changes (synthetic &amp; conventional)</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Tire rotation &amp; balancing" data-es="Rotación y balanceo de llantas" data-pt="Rotação e balanceamento de pneus">Tire rotation &amp; balancing</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Multi-point vehicle inspection" data-es="Inspección multipunto del vehículo" data-pt="Inspeção multiponto do veículo">Multi-point vehicle inspection</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Fluid checks &amp; refills" data-es="Revisión y recarga de fluidos" data-pt="Verificação e recarga de fluidos">Fluid checks &amp; refills</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Brake inspection &amp; repair" data-es="Inspección y reparación de frenos" data-pt="Inspeção e reparo de freios">Brake inspection &amp; repair</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Air filter replacement" data-es="Reemplazo de filtro de aire" data-pt="Troca de filtro de ar">Air filter replacement</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Wiper blade replacement" data-es="Reemplazo de escobillas" data-pt="Troca de palhetas">Wiper blade replacement</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Battery testing &amp; replacement" data-es="Prueba y reemplazo de batería" data-pt="Teste e troca de bateria">Battery testing &amp; replacement</span></li>
+          </ul>
+          <div class="sd-note" data-en="Regular maintenance is the best way to extend vehicle life and prevent costly repairs down the road." data-es="El mantenimiento regular es la mejor manera de prolongar la vida del vehículo y prevenir costosas reparaciones." data-pt="A manutenção regular é a melhor maneira de prolongar a vida do veículo e prevenir reparos caros.">Regular maintenance is the best way to extend vehicle life and prevent costly repairs down the road.</div>
+        </div>
+      </div>
+
+      <div class="service-detail reveal">
+        <div class="sd-header">
+          <div class="sd-icon"><svg class="icon icon-lg"><use href="#ic-tools"/></svg></div>
+          <div>
+            <h2 data-en="Auto Repairs" data-es="Reparaciones de Autos" data-pt="Reparos de Automóveis">Auto Repairs</h2>
+            <p data-en="Mechanical repairs done right the first time" data-es="Reparaciones mecánicas hechas bien desde el principio" data-pt="Reparos mecânicos feitos certo na primeira vez">Mechanical repairs done right the first time</p>
+          </div>
+        </div>
+        <div class="sd-body">
+          <ul class="sd-list">
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Engine diagnostics (OBD-II scan)" data-es="Diagnóstico de motor (escaneo OBD-II)" data-pt="Diagnóstico de motor (scan OBD-II)">Engine diagnostics (OBD-II scan)</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Engine repair &amp; rebuilds" data-es="Reparación y reconstrucción de motores" data-pt="Reparo e reconstrução de motores">Engine repair &amp; rebuilds</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Exhaust system repairs" data-es="Reparaciones del sistema de escape" data-pt="Reparos do sistema de escape">Exhaust system repairs</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Transmission service" data-es="Servicio de transmisión" data-pt="Serviço de transmissão">Transmission service</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Suspension &amp; steering" data-es="Suspensión y dirección" data-pt="Suspensão e direção">Suspension &amp; steering</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Fuel system repair" data-es="Reparación del sistema de combustible" data-pt="Reparo do sistema de combustível">Fuel system repair</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Electrical system repair" data-es="Reparación del sistema eléctrico" data-pt="Reparo do sistema elétrico">Electrical system repair</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Timing belt/chain service" data-es="Servicio de correa/cadena de distribución" data-pt="Serviço de correia/corrente de distribuição">Timing belt/chain service</span></li>
+          </ul>
+          <div class="sd-note" data-en="Check engine light on? Bring it in — our certified techs will diagnose the issue fast." data-es="¿Encendida la luz de verificación del motor? Tráigalo — nuestros técnicos certificados diagnosticarán el problema rápido." data-pt="Luz de verificação do motor acesa? Traga — nossos técnicos certificados diagnosticarão o problema rapidamente.">Check engine light on? Bring it in — our certified techs will diagnose the issue fast.</div>
+        </div>
+      </div>
+
+      <div class="service-detail reveal">
+        <div class="sd-header">
+          <div class="sd-icon"><svg class="icon icon-lg"><use href="#ic-car"/></svg></div>
+          <div>
+            <h2 data-en="Collision Repair" data-es="Reparación de Colisiones" data-pt="Reparo de Colisão">Collision Repair</h2>
+            <p data-en="Restore your vehicle to pre-accident condition" data-es="Restaura tu vehículo a su condición previa al accidente" data-pt="Restaure seu veículo à condição pré-acidente">Restore your vehicle to pre-accident condition</p>
+          </div>
+        </div>
+        <div class="sd-body">
+          <ul class="sd-list">
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Full body damage assessment" data-es="Evaluación completa de daños en carrocería" data-pt="Avaliação completa de danos na carroceria">Full body damage assessment</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Frame straightening &amp; alignment" data-es="Enderezado y alineación de chasis" data-pt="Endireitamento e alinhamento de chassi">Frame straightening &amp; alignment</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Dent removal (PDR &amp; traditional)" data-es="Eliminación de abolladuras (PDR y tradicional)" data-pt="Remoção de amassados (PDR e tradicional)">Dent removal (PDR &amp; traditional)</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Scratch &amp; paint chip repair" data-es="Reparación de rayones y astillas de pintura" data-pt="Reparo de arranhões e lascas de tinta">Scratch &amp; paint chip repair</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Bumper repair &amp; replacement" data-es="Reparación y reemplazo de parachoques" data-pt="Reparo e substituição de para-choque">Bumper repair &amp; replacement</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Panel replacement" data-es="Reemplazo de paneles" data-pt="Substituição de painéis">Panel replacement</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Glass &amp; windshield repair" data-es="Reparación de vidrios y parabrisas" data-pt="Reparo de vidros e para-brisas">Glass &amp; windshield repair</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="All insurance companies accepted" data-es="Se aceptan todas las aseguradoras" data-pt="Todas as seguradoras aceitas">All insurance companies accepted</span></li>
+          </ul>
+          <div class="sd-note" data-en="We work directly with your insurance company to streamline the claims process and get you back on the road." data-es="Trabajamos directamente con su aseguradora para agilizar el proceso de reclamaciones y que pueda volver a la carretera." data-pt="Trabalhamos diretamente com sua seguradora para agilizar o processo de sinistros.">We work directly with your insurance company to streamline the claims process and get you back on the road.</div>
+        </div>
+      </div>
+
+      <div class="service-detail reveal">
+        <div class="sd-header">
+          <div class="sd-icon"><svg class="icon icon-lg"><use href="#ic-paint"/></svg></div>
+          <div>
+            <h2 data-en="Paint &amp; Refinishing" data-es="Pintura y Acabado" data-pt="Pintura e Acabamento">Paint &amp; Refinishing</h2>
+            <p data-en="Sherwin Williams certified — factory-quality finish" data-es="Certificado Sherwin Williams — acabado de calidad de fábrica" data-pt="Certificado Sherwin Williams — acabamento com qualidade de fábrica">Sherwin Williams certified — factory-quality finish</p>
+          </div>
+        </div>
+        <div class="sd-body">
+          <ul class="sd-list">
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Computerized color matching" data-es="Igualación de color computerizada" data-pt="Correspondência de cores computadorizada">Computerized color matching</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Custom paint &amp; finishes" data-es="Pintura y acabados personalizados" data-pt="Pintura e acabamentos personalizados">Custom paint &amp; finishes</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Clear coat application" data-es="Aplicación de barniz transparente" data-pt="Aplicação de verniz transparente">Clear coat application</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Full vehicle repaints" data-es="Repintado completo del vehículo" data-pt="Repintura completa do veículo">Full vehicle repaints</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Spot paint repair" data-es="Reparación de pintura puntual" data-pt="Reparo pontual de pintura">Spot paint repair</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Rust treatment &amp; prevention" data-es="Tratamiento y prevención de óxido" data-pt="Tratamento e prevenção de ferrugem">Rust treatment &amp; prevention</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Paint protection" data-es="Protección de pintura" data-pt="Proteção de pintura">Paint protection</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Sherwin Williams premium products" data-es="Productos premium Sherwin Williams" data-pt="Produtos premium Sherwin Williams">Sherwin Williams premium products</span></li>
+          </ul>
+          <div class="sd-note" data-en="Every paint job uses Sherwin Williams premium automotive products for a durable, vibrant finish that lasts." data-es="Cada trabajo de pintura usa productos automotrices premium de Sherwin Williams para un acabado duradero y vibrante." data-pt="Cada trabalho de pintura usa produtos automotivos premium Sherwin Williams para um acabamento duradouro e vibrante.">Every paint job uses Sherwin Williams premium automotive products for a durable, vibrant finish that lasts.</div>
+        </div>
+      </div>
+
+      <div class="service-detail reveal">
+        <div class="sd-header">
+          <div class="sd-icon"><svg class="icon icon-lg"><use href="#ic-snow"/></svg></div>
+          <div>
+            <h2 data-en="A/C &amp; Heating" data-es="Aire Acondicionado y Calefacción" data-pt="Ar Condicionado e Aquecimento">A/C &amp; Heating</h2>
+            <p data-en="Stay comfortable all year round" data-es="Mantente cómodo durante todo el año" data-pt="Fique confortável durante todo o ano">Stay comfortable all year round</p>
+          </div>
+        </div>
+        <div class="sd-body">
+          <ul class="sd-list">
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="A/C system diagnostics" data-es="Diagnóstico del sistema de A/C" data-pt="Diagnóstico do sistema de A/C">A/C system diagnostics</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Refrigerant recharge" data-es="Recarga de refrigerante" data-pt="Recarga de refrigerante">Refrigerant recharge</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Compressor repair &amp; replacement" data-es="Reparación y reemplazo de compresor" data-pt="Reparo e substituição de compressor">Compressor repair &amp; replacement</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Heater core service" data-es="Servicio del núcleo del calefactor" data-pt="Serviço do núcleo do aquecedor">Heater core service</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Blower motor repair" data-es="Reparación del motor del ventilador" data-pt="Reparo do motor do ventilador">Blower motor repair</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Climate control system service" data-es="Servicio del sistema de climatización" data-pt="Serviço do sistema de climatização">Climate control system service</span></li>
+          </ul>
+          <div class="sd-note" data-en="Georgia summers demand a reliable A/C. We'll make sure you stay cool on every drive." data-es="Los veranos de Georgia exigen un A/C confiable. Nos aseguraremos de que se mantenga fresco en cada viaje." data-pt="Os verões da Geórgia exigem um A/C confiável. Garantiremos que você fique fresco em cada viagem.">Georgia summers demand a reliable A/C. We'll make sure you stay cool on every drive.</div>
+        </div>
+      </div>
+
+      <div class="service-detail reveal">
+        <div class="sd-header">
+          <div class="sd-icon"><svg class="icon icon-lg"><use href="#ic-insurance"/></svg></div>
+          <div>
+            <h2 data-en="Fleet &amp; Dealer Services" data-es="Servicios para Flotas y Concesionarios" data-pt="Serviços para Frotas e Revendedores">Fleet &amp; Dealer Services</h2>
+            <p data-en="Special pricing for fleets and dealerships" data-es="Precios especiales para flotas y concesionarios" data-pt="Preços especiais para frotas e revendedores">Special pricing for fleets and dealerships</p>
+          </div>
+        </div>
+        <div class="sd-body">
+          <ul class="sd-list">
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Fleet maintenance programs" data-es="Programas de mantenimiento de flotas" data-pt="Programas de manutenção de frotas">Fleet maintenance programs</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Dealer reconditioning" data-es="Reacondicionamiento para concesionarios" data-pt="Recondicionamento para revendedores">Dealer reconditioning</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Volume discount pricing" data-es="Precios con descuento por volumen" data-pt="Preços com desconto por volume">Volume discount pricing</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Priority scheduling" data-es="Programación prioritaria" data-pt="Agendamento prioritário">Priority scheduling</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Multi-vehicle coordination" data-es="Coordinación de múltiples vehículos" data-pt="Coordenação de múltiplos veículos">Multi-vehicle coordination</span></li>
+            <li><svg class="icon"><use href="#ic-check"/></svg><span data-en="Dedicated account management" data-es="Gestión de cuenta dedicada" data-pt="Gestão de conta dedicada">Dedicated account management</span></li>
+          </ul>
+          <div class="sd-note" data-en="Running a fleet or dealership? Call (770) 265-7023 for custom pricing and a dedicated service plan." data-es="¿Tiene una flota o concesionario? Llame al (770) 265-7023 para precios personalizados y un plan de servicio dedicado." data-pt="Tem uma frota ou revendedora? Ligue para (770) 265-7023 para preços personalizados e um plano de serviço dedicado.">Running a fleet or dealership? Call (770) 265-7023 for custom pricing and a dedicated service plan.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process-section">
+  <div class="container">
+    <div class="section-header reveal" style="text-align:center">
+      <div class="section-label" data-en="How It Works" data-es="Cómo Funciona" data-pt="Como Funciona">How It Works</div>
+      <h2 class="section-title" data-en="Your Repair Journey" data-es="Su Proceso de Reparación" data-pt="Sua Jornada de Reparo">Your Repair Journey</h2>
+      <p class="section-subtitle" style="margin:0 auto" data-en="Simple, transparent, stress-free — from drop-off to pickup." data-es="Simple, transparente y sin estrés — desde la entrega hasta la recogida." data-pt="Simples, transparente e sem estresse — do drop-off à retirada.">Simple, transparent, stress-free — from drop-off to pickup.</p>
+    </div>
+    <div class="process-steps reveal">
+      <div class="step-item">
+        <div class="step-num">1</div>
+        <h4 data-en="Schedule" data-es="Programar" data-pt="Agendar">Schedule</h4>
+        <p data-en="Book online or call us. Walk-ins also welcome." data-es="Reserve en línea o llámenos. También se aceptan sin cita." data-pt="Agende online ou ligue. Aceita sem agendamento.">Book online or call us. Walk-ins also welcome.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">2</div>
+        <h4 data-en="Diagnosis" data-es="Diagnóstico" data-pt="Diagnóstico">Diagnosis</h4>
+        <p data-en="Our techs assess your vehicle and provide a clear estimate." data-es="Nuestros técnicos evalúan su vehículo y brindan un estimado claro." data-pt="Nossos técnicos avaliam seu veículo e fornecem um orçamento claro.">Our techs assess your vehicle and provide a clear estimate.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">3</div>
+        <h4 data-en="Insurance" data-es="Seguro" data-pt="Seguro">Insurance</h4>
+        <p data-en="For collision work, we contact your insurer directly." data-es="Para trabajos de colisión, contactamos directamente a su aseguradora." data-pt="Para trabalhos de colisão, contactamos sua seguradora diretamente.">For collision work, we contact your insurer directly.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">4</div>
+        <h4 data-en="Repair" data-es="Reparación" data-pt="Reparo">Repair</h4>
+        <p data-en="Certified technicians complete all work with premium parts." data-es="Técnicos certificados completan todos los trabajos con piezas premium." data-pt="Técnicos certificados completam todos os trabalhos com peças premium.">Certified technicians complete all work with premium parts.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-num">5</div>
+        <h4 data-en="Pickup" data-es="Recoger" data-pt="Retirada">Pickup</h4>
+        <p data-en="Your vehicle is ready. Quality checked and cleaned." data-es="Su vehículo está listo. Revisado y limpio." data-pt="Seu veículo está pronto. Verificado e limpo.">Your vehicle is ready. Quality checked and cleaned.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING TIERS -->
+<section class="pricing-section">
+  <div class="container">
+    <div class="section-header reveal" style="text-align:center;margin-bottom:40px">
+      <div class="section-label" style="color:rgba(255,255,255,0.6)" data-en="Pricing Options" data-es="Opciones de Precio" data-pt="Opções de Preço">Pricing Options</div>
+      <h2 class="section-title" style="color:var(--white)" data-en="Transparent Pricing for Every Need" data-es="Precios Transparentes para Cada Necesidad" data-pt="Preços Transparentes para Cada Necessidade">Transparent Pricing for Every Need</h2>
+    </div>
+    <div class="pricing-inner reveal">
+      <div class="pricing-card">
+        <div class="pricing-icon"><svg class="icon icon-xl"><use href="#ic-wrench"/></svg></div>
+        <h3 data-en="Standard Service" data-es="Servicio Estándar" data-pt="Serviço Padrão">Standard Service</h3>
+        <p data-en="Fair, competitive pricing on all maintenance and mechanical repairs. No hidden fees." data-es="Precios justos y competitivos en todos los servicios de mantenimiento y reparaciones mecánicas." data-pt="Preços justos e competitivos em toda manutenção e reparos mecânicos.">Fair, competitive pricing on all maintenance and mechanical repairs. No hidden fees.</p>
+      </div>
+      <div class="pricing-card featured">
+        <div class="pricing-icon"><svg class="icon icon-xl"><use href="#ic-insurance"/></svg></div>
+        <h3 data-en="Insurance Claims" data-es="Reclamaciones de Seguro" data-pt="Sinistros de Seguro">Insurance Claims</h3>
+        <p data-en="We work directly with your insurer. You pay only your deductible — we handle the rest." data-es="Trabajamos directamente con su aseguradora. Usted solo paga su deducible — nosotros hacemos el resto." data-pt="Trabalhamos diretamente com sua seguradora. Você paga apenas a franquia — cuidamos do resto.">We work directly with your insurer. You pay only your deductible — we handle the rest.</p>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-icon"><svg class="icon icon-xl"><use href="#ic-car"/></svg></div>
+        <h3 data-en="Fleet &amp; Dealer" data-es="Flota y Concesionario" data-pt="Frota e Revendedor">Fleet &amp; Dealer</h3>
+        <p data-en="Volume-based discounts for businesses. Call for custom fleet pricing and dedicated service plans." data-es="Descuentos por volumen para empresas. Llame para precios de flota personalizados." data-pt="Descontos por volume para empresas. Ligue para preços de frota personalizados.">Volume-based discounts for businesses. Call for custom fleet pricing and dedicated service plans.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <h2 data-en="Ready for Professional Service?" data-es="¿Listo para Servicio Profesional?" data-pt="Pronto para Serviço Profissional?">Ready for Professional Service?</h2>
+        <p data-en="Book your appointment online or call us today." data-es="Reserve su cita en línea o llámenos hoy." data-pt="Agende sua consulta online ou ligue hoje.">Book your appointment online or call us today.</p>
+      </div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap">
+        <a href="https://myalp.io/ultnvt" target="_blank" class="btn-white">
+          <svg class="icon"><use href="#ic-car"/></svg>
+          <span data-en="Book Online" data-es="Reservar en Línea" data-pt="Agendar Online">Book Online</span>
+        </a>
+        <a href="tel:7702657023" class="btn-white" style="background:transparent;color:var(--white);border:2px solid rgba(255,255,255,0.4)">
+          <svg class="icon"><use href="#ic-phone"/></svg>
+          <span>(770) 265-7023</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://static.wixstatic.com/media/073cd2_dcad4a7b3d1e4235bcc4277741e4fbac~mv2.png/v1/fill/w_1200,h_960,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/fulllogo_transparent.png" alt="Pro Fix Auto"/>
+        <p data-en="Full-service auto repair and collision center in Marietta, GA. Insurance claims accepted." data-es="Taller de reparación de autos en Marietta, GA. Se aceptan reclamaciones de seguro." data-pt="Centro completo de reparo de automóveis em Marietta, GA. Sinistros aceitos.">Full-service auto repair and collision center in Marietta, GA. Insurance claims accepted.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn"><svg class="icon"><use href="#ic-fb"/></svg></a>
+          <a href="#" class="social-btn"><svg class="icon"><use href="#ic-ig"/></svg></a>
+          <a href="#" class="social-btn"><svg class="icon"><use href="#ic-gg"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Quick Links" data-es="Enlaces Rápidos" data-pt="Links Rápidos">Quick Links</h4>
+        <ul>
+          <li><a href="index.html" data-en="Home" data-es="Inicio" data-pt="Início">Home</a></li>
+          <li><a href="services.html" data-en="Services" data-es="Servicios" data-pt="Serviços">Services</a></li>
+          <li><a href="about.html" data-en="About Us" data-es="Nosotros" data-pt="Sobre Nós">About Us</a></li>
+          <li><a href="reviews.html" data-en="Reviews" data-es="Reseñas" data-pt="Avaliações">Reviews</a></li>
+          <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-pt="Contato">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Services" data-es="Servicios" data-pt="Serviços">Services</h4>
+        <ul>
+          <li><a href="services.html" data-en="Maintenance" data-es="Mantenimiento" data-pt="Manutenção">Maintenance</a></li>
+          <li><a href="services.html" data-en="Auto Repairs" data-es="Reparaciones" data-pt="Reparos">Auto Repairs</a></li>
+          <li><a href="services.html" data-en="Collision Repair" data-es="Colisiones" data-pt="Colisão">Collision Repair</a></li>
+          <li><a href="services.html" data-en="Paint & Refinishing" data-es="Pintura" data-pt="Pintura">Paint &amp; Refinishing</a></li>
+          <li><a href="services.html" data-en="A/C & Heating" data-es="A/C" data-pt="A/C">A/C &amp; Heating</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Contact" data-es="Contacto" data-pt="Contato">Contact</h4>
+        <ul>
+          <li><a href="tel:7702657023">(770) 265-7023</a></li>
+          <li><a href="#">1460 Roswell Rd<br>Marietta, GA</a></li>
+          <li><a href="https://myalp.io/ultnvt" target="_blank" data-en="Book Online" data-es="Reservar" data-pt="Agendar">Book Online</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="&copy; 2024 Pro Fix Auto Repair &amp; Collision Inc. All rights reserved." data-es="&copy; 2024 Pro Fix Auto Repair &amp; Collision Inc. Todos los derechos reservados." data-pt="&copy; 2024 Pro Fix Auto Repair &amp; Collision Inc. Todos os direitos reservados.">&copy; 2024 Pro Fix Auto Repair &amp; Collision Inc. All rights reserved.</p>
+      <p>1460 Roswell Rd, Marietta, GA &mdash; (770) 265-7023</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const LANG_KEY='profix_lang';
+let currentLang=localStorage.getItem(LANG_KEY)||'en';
+function setLang(lang){currentLang=lang;localStorage.setItem(LANG_KEY,lang);document.querySelectorAll('[data-en]').forEach(el=>{const v=el.getAttribute('data-'+lang);if(v)el.innerHTML=v;});document.querySelectorAll('.lang-btn').forEach(b=>{b.classList.toggle('active',b.textContent.toLowerCase()===lang);});document.documentElement.lang=lang;}
+setLang(currentLang);
+window.addEventListener('scroll',()=>{document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>40);});
+document.getElementById('hamburger').addEventListener('click',()=>{document.getElementById('mobileMenu').classList.toggle('open');});
+const obs=new IntersectionObserver((e)=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in');});},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal,.rl,.rr').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
